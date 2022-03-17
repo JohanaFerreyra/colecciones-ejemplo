@@ -8,12 +8,14 @@ public class MascotApp {
 
         ServicioMascota servMasc = new ServicioMascota();
         
-        servMasc.crearMascota();
-        servMasc.crearMascota();
-        
+        servMasc.fabricaMascota(2);
         servMasc.mostrarMascotas();
         
-
+        servMasc.actualizarMascota(0);
+        servMasc.mostrarMascotas();
+        
+        servMasc.eliminarMascota(1);
+        servMasc.mostrarMascotas();
     }
 
 }
